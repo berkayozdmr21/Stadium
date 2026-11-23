@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:perde-test;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
+
+perde:
+  hold-seconds: 300
+  max-seats: 6
+  allowed-origins: http://localhost:5173
+  seed:
+    enabled: false        # her test kendi verisini kurar
+  expiry:
+    enabled: false        # süre dolumu testlerde elle tetiklenir
+  crowd:
+    enabled: false
+  rate-limit:
+    requests-per-minute: 1000000
