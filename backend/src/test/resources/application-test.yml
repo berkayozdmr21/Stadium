@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:perde-test;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
+    url: jdbc:h2:mem:stadyum-test;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
 
-perde:
+stadyum:
   hold-seconds: 300
   max-seats: 6
   allowed-origins: http://localhost:5173

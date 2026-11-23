@@ -10,15 +10,19 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.perde</groupId>
-    <artifactId>perde-backend</artifactId>
+    <groupId>com.stadyum</groupId>
+    <artifactId>stadyum-backend</artifactId>
     <version>1.0.0</version>
-    <name>perde-backend</name>
+    <name>stadyum-backend</name>
     <description>Canlı koltuk rezervasyonu - backend</description>
 
     <properties>
         <java.version>21</java.version>
         <archunit.version>1.4.1</archunit.version>
+        <!-- H2 2.4.240'ta check kısıtı, onu oluşturan (Flyway'in kullandığı) bağlantıya bağlı kalıyor; havuz o
+             bağlantıyı yenileyince ("database has been closed") her insert/update patlıyor. Flyway'in doğruladığı
+             son sürüme sabitlendi. -->
+        <h2.version>2.3.232</h2.version>
         <embedded-postgres.version>2.1.0</embedded-postgres.version>
     </properties>
 

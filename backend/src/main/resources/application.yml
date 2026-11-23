@@ -1,12 +1,12 @@
 spring:
   application:
-    name: perde
+    name: stadyum
   datasource:
     # Varsayılan: kurulum gerektirmeyen bellek içi H2 (PostgreSQL kipi). Uygulama kapanınca veri silinir.
-    # PostgreSQL için PERDE_DB_URL / PERDE_DB_USER / PERDE_DB_PASSWORD ortam değişkenlerini ver.
-    url: ${PERDE_DB_URL:jdbc:h2:mem:perde;MODE=PostgreSQL;DB_CLOSE_DELAY=-1}
-    username: ${PERDE_DB_USER:sa}
-    password: ${PERDE_DB_PASSWORD:}
+    # PostgreSQL için STADYUM_DB_URL / STADYUM_DB_USER / STADYUM_DB_PASSWORD ortam değişkenlerini ver.
+    url: ${STADYUM_DB_URL:jdbc:h2:mem:stadyum;MODE=PostgreSQL;DB_CLOSE_DELAY=-1}
+    username: ${STADYUM_DB_USER:sa}
+    password: ${STADYUM_DB_PASSWORD:}
   jpa:
     open-in-view: false
     hibernate:
@@ -22,9 +22,9 @@ management:
       exposure:
         include: health
 
-perde:
+stadyum:
   hold-seconds: 300
   max-seats: 6
-  allowed-origins: ${PERDE_ALLOWED_ORIGINS:http://localhost:5173,http://127.0.0.1:5173}
+  allowed-origins: ${STADYUM_ALLOWED_ORIGINS:http://localhost:5173,http://127.0.0.1:5173}
   crowd:
-    enabled: ${PERDE_CROWD:true}   # demo kalabalığı; gerçek kullanımda false yap
+    enabled: ${STADYUM_CROWD:true}   # demo kalabalığı; gerçek kullanımda false yap
