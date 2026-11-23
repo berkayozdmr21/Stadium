@@ -27,3 +27,6 @@ backend/src/main/resources/static/
 *.iml
 .DS_Store
 Thumbs.db
+
+# Telifli referans fotoğraf ve planlar: yalnızca yerelde, repoya girmez
+referans/
