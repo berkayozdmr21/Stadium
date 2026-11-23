@@ -10,10 +10,10 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.perde</groupId>
-    <artifactId>perde-backend</artifactId>
+    <groupId>com.stadyum</groupId>
+    <artifactId>stadyum-backend</artifactId>
     <version>1.0.0</version>
-    <name>perde-backend</name>
+    <name>stadyum-backend</name>
     <description>Canlı koltuk rezervasyonu - backend</description>
 
     <properties>
